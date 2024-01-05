@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+:root{
+    --main-color: #6096B4;
+    --second-color: #93BFCF;
+    --third-color: #BDCDD6;
+    --bg: #EEE9DA;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+nav{
+    margin: auto;
+    border-bottom: solid 4px black;
+    color: var(--bg);
+    background-color: var(--main-color);
+    outline: solid;
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+}
+
+
+.container {
+    margin: auto;
+    display: flex;
+    height: 350px;
+    align-items: center ;
+    justify-content: center;
+    text-align: center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 231px;
+    margin: auto;
+    border: solid 1px black;
+    font-size: 50px;
+    
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.button-container {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-btn {
+    margin: auto;
+    padding: 10px;
+    width: 100px;
+    background-color: var(--third-color);
+    border: solid 2px black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.restart-btn:hover {
+    background-color: black;
+    color: var(--bg);
+}
+
+.restart-btn:active {
+    opacity: 0.5;
+}
+
+.info-container {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
