@@ -20,7 +20,6 @@ nav{
     border-bottom: solid 4px black;
     color: var(--bg);
     background-color: var(--main-color);
-    outline: solid;
     text-align: center;
     padding-top: 10px;
     height: 50px;
@@ -39,18 +38,21 @@ nav{
 .box{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    width: 231px;
+    width: 230px;
     margin: auto;
-    border: solid 1px black;
     font-size: 50px;
     
 }
 
 .square {
+    font-family: 'Gaegu';
+    font-size: 4rem;
+    font-weight: bold;
     height: 75px;
     width: 75px;
-    border: solid 1px black;
+    border: solid 2px black;
     cursor: pointer;
+    transition: 0.7s ease;
 }
 
 .button-container {
@@ -79,7 +81,8 @@ nav{
 }
 
 .restart-btn:active {
-    opacity: 0.5;
+    background-color: var(--main-color);
+    color: black;
 }
 
 .info-container {
@@ -87,3 +90,28 @@ nav{
     width: 200px;
     text-align: center;
 }
+
+.square:first-child,
+.square:nth-child(2),
+.square:nth-child(3) {
+    border-top: none;
+}
+
+.square:nth-child(3n + 1) {
+    border-left: none;
+}
+.square:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.square:last-child,
+.square:nth-child(8),
+.square:nth-child(7) {
+    border-bottom: none;
+}
+
+.winning-line {
+    color: #ff0000;
+    
+}
+
